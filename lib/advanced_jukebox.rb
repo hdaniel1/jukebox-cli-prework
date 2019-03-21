@@ -31,7 +31,7 @@ def list(my_songs)
     list_of_songs.push(song)
   end
 
-  list_of_songs
+  puts list_of_songs
 
 end
 
