@@ -47,8 +47,20 @@ def play(my_songs)
   puts "Please enter a song name:"
   response = gets.chomp
 
-  my_songs.each do |name, path|
-    if response == name
+  list_of_songs = []
+  my_songs.each do |song, path|
+    list_of_songs.push(song)
+  end
+
+  if list_of_songs.include?(response)
+    my_songs.each do |song, path|
+      if song == response
+        system 'open #{my_songs[name]}'
+      end
+    end
+  else
+    puts "Invalid input, please try again"
+  end 
       system 'open #{my_songs[name]}'
     else
       puts "Invalid input, please try again"
