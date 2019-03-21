@@ -29,7 +29,9 @@ def list(my_songs)
   list_of_songs = []
   my_songs.each do |song, path|
     list_of_songs.push(song)
-  end 
+  end
+
+  list_of_songs
 
 end
 
