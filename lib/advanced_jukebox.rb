@@ -55,7 +55,7 @@ def play(my_songs)
   if list_of_songs.include?(response)
     my_songs.each do |song, path|
       if song == response
-        path.slice!("< path to this directory ")
+        path.slice!("< path to this directory >")
         system 'open #{path}'
       end
     end
