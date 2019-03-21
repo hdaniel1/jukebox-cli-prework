@@ -56,7 +56,7 @@ def play(my_songs)
     my_songs.each do |song, path|
       if song == response
         path.slice!("< path to this directory >")
-        system path
+        system 'open #{path}'
       end
     end
   else
