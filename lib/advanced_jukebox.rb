@@ -23,6 +23,7 @@ end
 
 
 
+
 def list(my_songs)
   #this method is different! Collect the keys of the my_songs hash and
   #list the songs by name
@@ -51,7 +52,7 @@ def play(my_songs)
   my_songs.each do |song, path|
     list_of_songs.push(song)
   end
-  binding.pry
+
   if list_of_songs.include?(response)
     my_songs.each do |song, path|
       if song == response
