@@ -64,4 +64,17 @@ end
 
 def run(my_songs)
   #this method is the same as in jukebox.rb
+  help
+  puts "Please enter a command:"
+  command = gets.chomp
+    if command == "exit"
+      exit_jukebox
+      #break
+    elsif command == "list"
+      list(songs)
+    elsif command == "help"
+      help
+    elsif command == "play"
+      play(songs)
+    end
 end
