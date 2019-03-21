@@ -55,13 +55,13 @@ def play(my_songs)
   if list_of_songs.include?(response)
     my_songs.each do |song, path|
       if song == response
-        system 'open #{my_songs[name]}'
+        system 'open #{path.slice!(" path to this directory >")}'
       end
     end
   else
     puts "Invalid input, please try again"
   end
-  
+
 end
 
 def exit_jukebox
