@@ -71,10 +71,10 @@ def run(my_songs)
       exit_jukebox
       #break
     elsif command == "list"
-      list(songs)
+      list(my_songs)
     elsif command == "help"
       help
     elsif command == "play"
-      play(songs)
+      play(my_songs)
     end
 end
