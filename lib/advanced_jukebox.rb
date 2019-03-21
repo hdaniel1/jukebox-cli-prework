@@ -26,7 +26,11 @@ end
 def list(my_songs)
   #this method is different! Collect the keys of the my_songs hash and
   #list the songs by name
-  
+  list_of_songs = []
+  my_songs.each do |song, path|
+    list_of_songs.push(song)
+  end 
+
 end
 
 
