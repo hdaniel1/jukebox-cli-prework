@@ -55,7 +55,7 @@ def play(my_songs)
   if list_of_songs.include?(response)
     my_songs.each do |song, path|
       if song == response
-        puts '#{path.splice!("< path to this directory ")}'
+        puts path.splice("< path to this directory ")
       end
     end
   else
